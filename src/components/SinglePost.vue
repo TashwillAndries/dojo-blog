@@ -14,6 +14,7 @@ import { computed } from "@vue/reactivity";
 export default {
   props: ["post"],
   setup(props) {
+    console.log(props.post);
     const snippet = computed(() => {
       return props.post.body.substring(0, 100) + "...";
     });
